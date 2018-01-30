@@ -125,7 +125,7 @@ public class CollapseTextView extends TextView {
         mRecorderMaxHeight = temp.bottom;
         mDrawableRect.set((width - mDrawable.getIntrinsicWidth()) / 2, mRecorderMaxLineHeight, (width - mDrawable.getIntrinsicWidth()) / 2 + mDrawable.getIntrinsicWidth(), mRecorderMaxLineHeight + drawableHeight);
         mDrawable.setBounds(mDrawableRect);
-        setMeasuredDimension(getMeasuredWidthAndState(), View.MeasureSpec.makeMeasureSpec(mRecorderMaxLineHeight + drawableHeight, View.MeasureSpec.getMode(getMeasuredHeightAndState())));
+        setMeasuredDimension(getMeasuredWidthAndState(), resolveSize(mRecorderMaxLineHeight + drawableHeight,heightMeasureSpec));
     }
 
 

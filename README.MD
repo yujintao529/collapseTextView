@@ -2,6 +2,7 @@
 ###  CollapseTextView 使用
 
 首先给大家看下效果，很简单。
+
 ![text.gif](https://i.loli.net/2018/02/01/5a7290936a8fb.gif)
 
 使用的话，主要是通过设置maxlines，然后通过调用collapse，expand，toggle等方法进行展开收起的操作

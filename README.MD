@@ -1,10 +1,12 @@
 
 ###  CollapseTextView 使用
 
-首先给大家看下效果，很简单。
+首先给大家看下效果，很简单。
+![text.gif](https://i.loli.net/2018/02/01/5a7290936a8fb.gif)
+
 使用的话，主要是通过设置maxlines，然后通过调用collapse，expand，toggle等方法进行展开收起的操作
 ### CollapseTextView实现原理
-实现的原理也比较简单，就是通过onMeasure的时候，进行高度的控制，需要注意的是，高度控制有两种情形：
+实现的原理也比较简单，就是通过onMeasure的时候，进行高度的控制，需要注意的是，高度控制有两种情形：
 - 一个是textView的height进行控制
 - 一个是通过maxLines进行控制。
 
